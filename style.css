@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+main {
+  margin-left: 30vw;
+  margin-top: 20vh;
+}
+
+.time p {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 2vh;
+}
+
+.buttons {
+  align-self: center;
+  text-align: center;
+}
+.buttons button {
+  font-size: 24px;
+  margin-right: 13px;
+  margin-top: 1vh;
+}
+.signs {
+  margin-top: -30vh;
+  width: 29vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.duration {
+    border: 2px solid black;
+  margin-right: 1vw;
+  height: 35px;
+  width: 100px;
+  align-self: center;
+  text-align: center;
+  font-size: 28px;
+}

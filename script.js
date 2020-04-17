@@ -1,3 +1,8 @@
+const timeInput = document.querySelector(".duration");
+const startButton = document.querySelector(".play");
+const stopButton = document.querySelector(".stop");
+const circle = document.querySelector("circle");
+
 class Timer {
   constructor(timeInput, startButton, stopButton, callbacks) {
     if (callbacks) {
@@ -22,6 +27,7 @@ class Timer {
     this.timeInput.value = time.toFixed(2);
   }
   start = () => {
+      console.log("We are starting");
     if (this.onStart) {
       this.onStart(this.timeRemaining);
     }
@@ -48,10 +54,6 @@ class Timer {
     this.start;
   };
 }
-const timeInput = document.querySelector(".duration");
-const startButton = document.querySelector(".play");
-const stopButton = document.querySelector(".stop");
-const circle = document.querySelector("circle");
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 circle.setAttribute("stroke-dasharray", perimeter);
